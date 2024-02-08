@@ -1,4 +1,5 @@
 import random
+import art
 
 player_hand = []
 computer_hand = []
@@ -96,6 +97,7 @@ def play_round():
 play_game = input('Do you want to play a game of Blackjack? Type "y" or "n": ')
 
 if play_game.lower() == 'y':
+    print(art.logo)
     play_round()
 else:
     exit
